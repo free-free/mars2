@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mars</class>
+ <widget class="QMainWindow" name="Mars">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mars</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="mars_resource.qrc">
+    <normaloff>:/icon/mars</normaloff>
+    <disabledoff>:/icon/mars</disabledoff>:/icon/mars</iconset>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="accessibleName">
+   <string/>
+  </property>
+  <property name="accessibleDescription">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QWidget" name="mainWidget" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(50, 50, 50, 255));</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="horizontalGroupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>140</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+border:0px 0px 0px 0px;
+}
+</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="horizontalGroupBox_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+border:0px 0px 0px 0px;</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QGroupBox" name="modeBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>160</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font-weight:bold</string>
+              </property>
+              <property name="title">
+               <string>  模式选择</string>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="verticalLayoutWidget_2">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>30</y>
+                 <width>101</width>
+                 <height>91</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="modeRadioButtonLayout">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QRadioButton" name="pModeRadioButton">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font-weight:normal;</string>
+                  </property>
+                  <property name="text">
+                   <string>位置模式</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="plModeRadioButton">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font-weight:normal;
+</string>
+                  </property>
+                  <property name="text">
+                   <string>恒定载荷</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="tModeRadioButton">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font-weight:normal;</string>
+                  </property>
+                  <property name="text">
+                   <string>震动测试</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>160</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font-weight:bold
+</string>
+              </property>
+              <property name="title">
+               <string>显示曲线 </string>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="verticalLayoutWidget_3">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>30</y>
+                 <width>101</width>
+                 <height>81</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QCheckBox" name="forceCurveCheckBox">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font-weight:normal;</string>
+                  </property>
+                  <property name="text">
+                   <string>力曲线</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="displacementCurveCheckBox">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font-weight:normal;</string>
+                  </property>
+                  <property name="text">
+                   <string>位移曲线</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="3" column="1">
+            <widget class="QGroupBox" name="groupBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>20</y>
+                <width>86</width>
+                <height>88</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <property name="leftMargin">
+                <number>8</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="pushButton">
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0.354067 rgba(15, 174, 10, 255), stop:1 rgba(100, 200, 100, 255));
+	border:none;
+	border-radius:5px;
+	padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+ border: 1px solid #aaa;
+
+}
+QPushButton::hover{
+background-color: qlineargradient(spread:repeat, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(15, 174, 10, 255), stop:1 rgba(100, 200, 100, 255));
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>设置参数</string>
+                 </property>
+                 <property name="flat">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+   
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0.46, x2:0, y2:1, stop:0.354067 rgba(247, 0, 29, 255), stop:1 rgba(255, 20, 60, 255));
+	border:none;
+	border-radius:5px;
+	padding-top:5px;
+   padding-bottom:5px;
+   color:white;
+   border: 1px solid #aaa;
+
+}
+QPushButton::hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0.0239234 rgba(247, 0, 29, 255), stop:1 rgba(255, 100, 100, 255));
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>停    止</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <layout class="QVBoxLayout" name="formLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>629</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar{
+					padding-top:0px;
+                 padding-bottom:0px;
+					height:26px;
+					background-color:qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(50, 50, 50, 255), stop:1 rgba(150, 150, 150, 255));
+}
+
+QMenuBar::item{
+				 margin: 0px 0px 0px 0px;
+					background-color:qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(50, 50, 50, 255), stop:1 rgba(150, 150, 150, 255));
+                color:white; 
+                padding:0px 10px 0px 10px;
+}
+QMenuBar::item:pressed{
+				background-color:#666;
+		       color:#efefef;
+}
+/*
+QMenu{
+                   background-color:#555;
+                   border:0px 0px 0px 0px;
+                   color:#f1f1f1;
+}
+*/
+/*
+QMenu::item{
+                 padding:3px 50px;
+                    margin:0px 0px 0px 0px;
+                    font-weight:400;
+                }
+QMenu::item:tearoff{
+                    color:#efefef;
+}
+*/
+QMenu::separator {
+                    height: 1px;
+}
+QMenu::item:selected{
+	    background-color: rgb(255, 94, 0);
+}
+QMenu::item::pressed{
+		background-color: rgb(255, 94, 0);
+}
+</string>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="helpMenu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <widget class="QMenu" name="protocolDescription">
+     <property name="title">
+      <string>连接协议</string>
+     </property>
+     <property name="icon">
+      <iconset resource="mars_resource.qrc">
+       <normaloff>:/icon/connect-protocol</normaloff>:/icon/connect-protocol</iconset>
+     </property>
+     <addaction name="serialPortProtocolDialogAction"/>
+    </widget>
+    <addaction name="protocolDescription"/>
+    <addaction name="aboutAction"/>
+   </widget>
+   <widget class="QMenu" name="toolsMenu">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="clearScreenAction"/>
+    <addaction name="exportAction"/>
+    <addaction name="importAction"/>
+    <addaction name="saveGraphAction"/>
+   </widget>
+   <widget class="QMenu" name="configurationsMenu">
+    <property name="title">
+     <string>配置</string>
+    </property>
+    <addaction name="serialPortConfigDialogAction"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>连接
+</string>
+    </property>
+    <widget class="QMenu" name="serialPortMenu">
+     <property name="title">
+      <string>串口</string>
+     </property>
+     <addaction name="connectSPAction"/>
+     <addaction name="disconnectSPAction"/>
+    </widget>
+    <addaction name="serialPortMenu"/>
+    <addaction name="exitAppAction"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="toolsMenu"/>
+   <addaction name="configurationsMenu"/>
+   <addaction name="helpMenu"/>
+  </widget>
+  <action name="connectSPAction">
+   <property name="icon">
+    <iconset resource="mars_resource.qrc">
+     <normaloff>:/icon/sp_connect</normaloff>:/icon/sp_connect</iconset>
+   </property>
+   <property name="text">
+    <string>连接串口
+</string>
+   </property>
+  </action>
+  <action name="disconnectSPAction">
+   <property name="icon">
+    <iconset resource="mars_resource.qrc">
+     <normaloff>:/icon/sp_disconnect</normaloff>:/icon/sp_disconnect</iconset>
+   </property>
+   <property name="text">
+    <string>关闭串口</string>
+   </property>
+  </action>
+  <action name="exitAppAction">
+   <property name="icon">
+    <iconset resource="mars_resource.qrc">
+     <normaloff>:/icon/exit</normaloff>:/icon/exit</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="serialPortProtocolDialogAction">
+   <property name="text">
+    <string>串口协议</string>
+   </property>
+  </action>
+  <action name="aboutAction">
+   <property name="text">
+    <string> 关于</string>
+   </property>
+  </action>
+  <action name="exportAction">
+   <property name="icon">
+    <iconset resource="mars_resource.qrc">
+     <normaloff>:/icon/export</normaloff>:/icon/export</iconset>
+   </property>
+   <property name="text">
+    <string>导出数据</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="clearScreenAction">
+   <property name="icon">
+    <iconset resource="mars_resource.qrc">
+     <normaloff>:/icon/clear</normaloff>:/icon/clear</iconset>
+   </property>
+   <property name="text">
+    <string>清除屏幕</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="serialPortConfigDialogAction">
+   <property name="icon">
+    <iconset resource="mars_resource.qrc">
+     <normaloff>:/icon/settings</normaloff>:/icon/settings</iconset>
+   </property>
+   <property name="text">
+    <string>串口配置</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="importAction">
+   <property name="icon">
+    <iconset resource="mars_resource.qrc">
+     <normaloff>:/icon/import</normaloff>:/icon/import</iconset>
+   </property>
+   <property name="text">
+    <string>导入数据</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="saveGraphAction">
+   <property name="icon">
+    <iconset resource="mars_resource.qrc">
+     <normaloff>:/icon/graph</normaloff>:/icon/graph</iconset>
+   </property>
+   <property name="text">
+    <string>保存图像</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mars_resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
